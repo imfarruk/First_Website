@@ -1,0 +1,418 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+.progress-container{
+    width: 100%;
+    height: 10px;
+    background-color: coral;
+}
+.progress-bar{
+    height: 8px;
+    background-color: aqua;
+    width: 0%;
+}
+.bgimg{
+   
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(107, 102, 167);
+    
+}
+
+li a:hover{
+    background: red;
+    box-shadow: 5px 5px 5px 0px rgba(131, 98, 98, 0.904);
+}
+
+.navbar{
+    width: 100%;
+}
+
+.colorchange{
+background: black;
+animation: mymove 6s infinite;
+}
+@keyframes mymove {
+    from{background-color: black;}
+    to {background-color: green;}
+}
+
+/*................Crousel.................*/
+
+.carousel_slider{
+    position: relative;
+    padding-top: 90px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.carousel{
+    position: relative;
+    display: flex; 
+    border-color: red ;
+    width: 80%;
+    height: 100%;
+    margin-left: 100px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    box-shadow: 5px 10px 20px 5px rgb(18, 31, 31);
+      
+  }
+  .carousel-indicators{
+     
+      text-emphasis: size;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .carousel-item{
+    width: 100%;
+    
+  }
+  .carousel-inner .carousel-item{
+      width: 100%;
+      height: 450px;
+      background-color: black;
+      margin: center;
+      margin: 0px 0 50px;
+      justify-content: center;
+      text-align: center;
+      
+      justify-items: center;
+  }
+  .carousel-inner .carousel-item h4{
+    margin: -5px 0 0;
+    padding: 0;
+    background: rgb(70, 35, 35);
+    color: bisque;
+    box-sizing: border-box;
+    border-top: 3px solid black;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+
+/*................About.................*/
+
+
+.about_section{
+    background-color: aqua;
+    padding: 0px 0px 10px;
+    height: 600px;
+}
+.about_section h3{
+    height: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    text-shadow: 3px 3px 1px darkred;
+    color: aliceblue;
+    
+    text-align: center;
+}
+
+.rowsetting{
+    margin: 80px 0px;
+}
+
+.imgsetting{
+    border-radius: 50px ;
+    height: 100px;
+    width: 100px;
+}
+.fa-desktop ,.fa-shopping-cart, .fa-lock{
+    margin-top: 26px;
+}
+
+.rowsetting h2{
+    margin-top: 23px;
+    font-weight: bold;
+    font-size: 30px;;
+}
+.rowsetting p{
+    color: rgb(188, 243, 238);
+    padding: 10px;
+}
+
+
+/*------------------------our team-------------------------*/
+
+.ourteam{
+    height: 700px;
+    padding: 100px 0px 50px;
+    width: 100%;
+}
+
+.ourteam h1{
+    font-weight: bold;
+}
+
+.teamsetting{
+    margin-top: 70px !important;
+}
+
+.rounded-circle{
+   border-radius: 23px solid red;
+   height: 250px;
+   width:250px;
+   margin: auto;
+}
+.figure{
+    margin: auto;
+}
+
+/*---------------our footer-------------------------*/
+
+
+    
+
+
+/*---------------responsive-------------------------*/
+
+@media(min-width: 992px){
+    .carousel_slider{
+        height: 600px;
+    }
+    .ourservices{
+        height: 600px;
+        }
+    .card_sliders{
+        height:133vh;
+        }
+    .portfolio{
+        height: 1050px
+        }
+    .team-section{
+        height: 610px;
+    }
+    .footer{
+        height: 0px;
+        padding-bottom: 100px;
+    }
+    .overlay .popup{
+        height: 425px;
+        width: 800px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .ourservices{
+        height: 700px;
+        }
+    
+    .portfolio{
+        height: 800px
+        }
+    .card_sliders{
+        height: 1130px;
+        }
+    .team-section{
+        height: 650px;
+    }
+    .footer{
+        height: 250px;
+       
+    }
+    .overlay .popup{
+        height: 250px;
+    }
+
+
+}
+
+@media(min-width: 575px) and (max-width:767px){
+    .ourservices{
+        height: 800px;
+        }
+    
+    .portfolio{
+        height: 3150px
+        }
+
+    .card_sliders{
+        height:2070px;
+        }
+    .team-section{
+        height: 1400px;
+    }
+    .footer{
+        height: 190px;
+        background-color: blue;
+    }
+    .overlay .popup{
+        height: 250px;
+    }
+}
+
+@media(min-width: 480px) and (max-width: 574px){
+    .about_section{
+        height: 1100px;
+        }
+    
+    .portfolio{
+        height: 2900px
+        }
+    .card_sliders{
+        height:2070px;
+    }
+    .team-section{
+        height: 1400px;
+    }
+    .footer{
+        height: 250px;
+        background-color: blue;
+    }
+    .overlay .popup{
+        height: 360px;
+        width: 370px;
+    }
+}
+
+@media(max-width:479px){
+    
+.ourservices{
+    height: 1150px;
+    }
+
+.portfolio{
+    height: 2450px;
+    }
+.card_sliders{
+    height:2200px;
+    }
+.team-section{
+    height: 1300px;
+}
+.footer{
+    height: 350px;
+    background-color: blue;
+}
+.overlay .popup{
+    height: 350px;
+}
+}
+
+
+/*---------------team section-----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+}
+
+.team-section{
+    height: 75vh;
+    display: flex;
+}
+.team-section h3{
+    background-color: black;
+    color: aliceblue;
+    font-size: 33px;
+    width: 60px;
+    height: 494px;
+    padding: 15px;
+    padding-top: 45px;
+    text-shadow: 3px 3px 1px darkred;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+
+.person{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+.person:hover{
+    flex: 3;
+}
+
+.person-pic{
+    position: absolute;
+    height: 100%;
+    margin-right: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.person:hover .person-pic{
+    filter: grayscale(0);
+    width: 100%;
+}
+
+.person-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.person:hover .person-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+.person-info h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+.person-info p{
+    color: #b8e994;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.socialmedia a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: #b8e994;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+.socialmedia a:hover{
+    color: #b8e994;
+    background-color: transparent;
+    transform: scale(1.5);
+}
+
+.footright{
+padding-left: 110px;
+}
+
+
+

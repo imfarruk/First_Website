@@ -1,0 +1,144 @@
+
+.headerset{
+padding-top: 250px;
+box-sizing: border-box;
+}
+.headerset h2{
+    font-size: 30px;
+}
+.headerset h1{
+    font-size: 44px;
+    font-weight: bold;
+}
+li a:hover{
+    background: red;
+}
+
+.colorchange{
+background: black;
+animation: mymove 6s infinite;
+}
+@keyframes mymove {
+    from{background-color: black;}
+    to {background-color: rgb(192, 22, 127);}
+}
+
+
+
+
+
+/*---------------------------------------OUR PRODUCTS----------------------------------------*/
+
+.portfolio{
+    height: max-content;
+    width: 100%;
+    margin-top: 30px;
+    
+    padding: 25px 0px 50px;
+    margin-bottom: 100px;
+}
+.portfolio h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(211, 22, 22);
+}
+
+.card{
+    margin-top: 30px;
+    height: 50px;
+}
+.card-body{
+    height: 50px;
+    
+}
+.card-img{
+    height: 100px;
+}
+
+
+
+/*---------------our footer-------------------------*/
+
+.footer{
+    height: 50px;
+    text-align: center;
+
+}
+    
+.footer h6{
+    line-height:50px;
+    
+}
+
+/*---------------responsive-------------------------*/
+
+@media(min-width: 992px){
+    .ourservices{
+        height: 600px;
+        }
+    
+    .portfolio{
+        height: 1050px
+        }
+    .ourteam{
+        height: 610px;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .ourservices{
+        height: 700px;
+        }
+    
+    .portfolio{
+        height: 800px
+        }
+    .ourteam{
+        height: 650px;
+    }
+
+
+}
+
+@media(min-width: 575px) and (max-width:767px){
+    .ourservices{
+        height: 800px;
+        }
+    
+    .portfolio{
+        height: 3150px
+        }
+    .ourteam{
+        height: 1300px;
+    }
+
+}
+
+@media(min-width: 480px) and (max-width: 574px){
+    .ourservices{
+        height: 1100px;
+        }
+    
+    .portfolio{
+        height: 2900px
+        }
+    .ourteam{
+        height: 1300px;
+    }
+
+}
+
+@media(max-width:479px){
+    
+.ourservices{
+    height: 1150px;
+    }
+
+.portfolio{
+    height: 2450px
+    }
+.ourteam{
+    height: 1300px;
+}
+}

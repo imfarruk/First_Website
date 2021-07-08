@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    color: blue;
+    margin: 30px 0 50px;
+    border: 13px solid green;
+
+}
+
+.gallery{
+    margin: 0px 0px;
+    text-align: center;
+}
+.gallery img{
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px groove green;
+    box-shadow: 5px 5px 5px 5px blue;
+    justify-content: center;
+    filter: grayscale(3);
+    transition: 1s step-end;
+}
+.gallery img:hover{
+    filter: blur();
+    transition: 6s ease-in;
+}
